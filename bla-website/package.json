@@ -1,0 +1,38 @@
+{
+  "name": "bla-website",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "dev": "tinacms dev -c \"next dev\"",
+    "dev:next": "next dev",
+    "build": "tinacms build --local --skip-indexing --skip-cloud-checks && next build",
+    "build:next": "next build",
+    "preview": "serve out",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tinacms": "3.8.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.18",
+    "@tinacms/cli": "2.3.0",
+    "@types/node": "24.10.0",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.2.6",
+    "serve": "14.2.5",
+    "tailwindcss": "4.1.18",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "better-sqlite3": "12.10.0"
+  }
+}

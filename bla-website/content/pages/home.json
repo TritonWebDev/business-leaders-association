@@ -1,0 +1,105 @@
+{
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "label": "Membership",
+      "href": "#membership"
+    },
+    {
+      "label": "FAQ",
+      "href": "#faq"
+    },
+    {
+      "label": "Board",
+      "href": "#board"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Socials",
+      "href": "#socials"
+    }
+  ],
+  "hero": {
+    "eyebrow": "HiFi Homepage",
+    "title": "Business Leaders Association",
+    "description": "Placeholder copy for the landing section."
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "Our Mission",
+    "body": "Placeholder copy for the about section."
+  },
+  "membership": {
+    "eyebrow": "Become A Member",
+    "title": "Receive a Member pass",
+    "options": [
+      {
+        "title": "General Membership",
+        "description": "Placeholder copy for general membership."
+      },
+      {
+        "title": "Premier Membership",
+        "description": "Placeholder copy for premier membership."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Placeholder question?",
+        "answer": "Placeholder answer."
+      }
+    ]
+  },
+  "board": {
+    "eyebrow": "Board Members",
+    "title": "Meet our board",
+    "members": [
+      {
+        "name": "Member Name",
+        "role": "Role"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Photo Gallery",
+    "title": "Photo Gallery",
+    "images": [
+      {
+        "src": "/uploads/gallery-placeholder.jpg",
+        "alt": "Gallery placeholder"
+      }
+    ]
+  },
+  "socials": {
+    "eyebrow": "Socials + Newsletter",
+    "title": "Find us elsewhere",
+    "links": [
+      {
+        "label": "Instagram",
+        "href": "#"
+      },
+      {
+        "label": "TikTok",
+        "href": "#"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "#"
+      }
+    ]
+  }
+}
+
