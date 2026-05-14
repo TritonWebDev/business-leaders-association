@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+dist/
+bla-website/.dev-logs/
+bla-website/public/admin/
+bla-website/tina/__generated__/
+.env
+.env*.local
+*.tsbuildinfo
