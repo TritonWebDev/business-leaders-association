@@ -1,8 +1,10 @@
 # Business Leaders Association Website
 
-Next.js + React + Tailwind site for the Business Leaders Association.
+Next.js + React + Tailwind site with TinaCMS for Business Leaders Association website.
 
 ## Setup
+
+For the dev environment:
 
 ```bash
 npm install
