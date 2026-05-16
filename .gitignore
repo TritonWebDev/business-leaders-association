@@ -8,3 +8,4 @@ bla-website/tina/__generated__/
 .env
 .env*.local
 *.tsbuildinfo
+package-lock.json

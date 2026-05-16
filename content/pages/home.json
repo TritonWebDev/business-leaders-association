@@ -10,8 +10,10 @@
   ],
   "hero": {
     "eyebrow": "HiFi Homepage",
-    "title": "Business Leaders Association",
-    "description": "Placeholder copy for the landing section."
+    "title": "Business Leaders \n Association",
+    "description": "A pre-professional UCSD club for students passionate about leadership, diversity entrepreneurship!",
+    "src": "http://localhost:3000/uploads/hero-placeholder.png",
+    "alt": "Hero placeholder image"
   },
   "about": {
     "eyebrow": "About",
