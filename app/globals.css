@@ -1,1 +1,18 @@
-/* Tailwind base/styles placeholder */
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Primary Font";
+  src: url("/fonts/the-seasons-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Secondary Font";
+  src: url("/fonts/libre-baskerville.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --font-primary: "Primary Font", serif;
+  --font-secondary: "Secondary Font", serif;
+}
