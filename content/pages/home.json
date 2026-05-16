@@ -12,7 +12,7 @@
     "eyebrow": "HiFi Homepage",
     "title": "Business Leaders \n Association",
     "description": "A pre-professional UCSD club for students passionate about leadership, diversity entrepreneurship!",
-    "src": "http://localhost:3000/uploads/hero-placeholder.png",
+    "src": "uploads/hero-placeholder.png",
     "alt": "Hero placeholder image"
   },
   "about": {
