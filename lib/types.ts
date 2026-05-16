@@ -13,6 +13,8 @@ export type AboutContent = {
   eyebrow: string;
   title: string;
   body: string;
+  src: string;
+  alt: string;
 };
 
 export type MembershipContent = {
