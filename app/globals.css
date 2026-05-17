@@ -20,6 +20,7 @@
   --color-bla-light-brown: #342b27;
   --color-bla-tan: #7a6f64;
   --color-bla-cream: #bfb8af;
+  --site-nav-offset: clamp(4.75rem, 12vh, 6.25rem);
 }
 
 html,
@@ -35,15 +36,58 @@ body {
 }
 
 .snap-scroll {
+  --snap-scrollbar-duration: 0.55s;
+  --snap-scrollbar-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
   height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   overscroll-behavior-y: contain;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color var(--snap-scrollbar-duration) var(--snap-scrollbar-ease);
+}
+
+.snap-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.snap-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  transition: background var(--snap-scrollbar-duration) var(--snap-scrollbar-ease);
+}
+
+.snap-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: transparent;
+  transition: background var(--snap-scrollbar-duration) var(--snap-scrollbar-ease);
+}
+
+.snap-scroll.snap-scroll--show-scrollbar {
+  scrollbar-color: var(--color-bla-tan) var(--color-bla-light-brown);
+}
+
+.snap-scroll.snap-scroll--show-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-bla-light-brown);
+}
+
+.snap-scroll.snap-scroll--show-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-bla-tan);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snap-scroll,
+  .snap-scroll::-webkit-scrollbar-track,
+  .snap-scroll::-webkit-scrollbar-thumb {
+    transition-duration: 0.01ms;
+  }
 }
 
 .snap-page {
   display: flex;
+  width: 100%;
   min-height: 100dvh;
   box-sizing: border-box;
   flex-direction: column;
@@ -56,15 +100,20 @@ body {
 .snap-page--white {
   background-color: #ffffff;
   color: var(--color-bla-light-brown);
+  box-shadow: 0 0 0 100vmax #ffffff;
+  clip-path: inset(0 -100vmax);
 }
 
 .snap-page--brown {
   background-color: var(--color-bla-light-brown);
   color: var(--color-bla-cream);
+  box-shadow: 0 0 0 100vmax var(--color-bla-light-brown);
+  clip-path: inset(0 -100vmax);
 }
 
 .snap-page__title {
-  max-width: min(90vw, 40rem);
+  width: 100%;
+  max-width: min(40rem, 92%);
   padding-inline: 1.5rem;
   font-family: var(--font-primary), "Playfair Display", Georgia, serif;
   font-size: clamp(2.5rem, 9vw, 5rem);

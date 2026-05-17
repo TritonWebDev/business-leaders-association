@@ -64,8 +64,13 @@ export type SocialsContent = {
   };
 };
 
+export type SiteContent = {
+  brand: string;
+};
+
 export type HomePageContent = {
   navigation: NavItem[];
+  site: SiteContent;
   hero: HeroContent;
   about: AboutContent;
   membership: MembershipContent;
