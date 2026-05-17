@@ -1,28 +1,32 @@
-import { SiteNav } from "@/components/layout/site-nav";
-import { AboutSection } from "@/components/sections/about-section";
-import { BoardSection } from "@/components/sections/board-section";
-import { FaqSection } from "@/components/sections/faq-section";
-import { GallerySection } from "@/components/sections/gallery-section";
-import { HeroSection } from "@/components/sections/hero-section";
-import { MembershipSection } from "@/components/sections/membership-section";
+import { SnapSection } from "@/components/layout/snap-section";
+import { PagePlaceholder } from "@/components/sections/page-placeholder";
 import { SocialsSection } from "@/components/sections/socials-section";
 import { homePageContent } from "@/lib/content";
 
 export default function Home() {
-  const { navigation } = homePageContent;
-
   return (
-    <>
-      <SiteNav items={navigation} />
-      <main>
-        <HeroSection content={homePageContent.hero} />
-        <AboutSection content={homePageContent.about} />
-        <MembershipSection content={homePageContent.membership} />
-        <FaqSection content={homePageContent.faq} />
-        <BoardSection content={homePageContent.board} />
-        <GallerySection content={homePageContent.gallery} />
+    <main className="snap-scroll">
+      <SnapSection id="homepage" className="snap-page--brown">
+        <PagePlaceholder title="Homepage" />
+      </SnapSection>
+      <SnapSection id="about" className="snap-page--white">
+        <PagePlaceholder title="About" />
+      </SnapSection>
+      <SnapSection id="membership" className="snap-page--brown">
+        <PagePlaceholder title="Become a Member" />
+      </SnapSection>
+      <SnapSection id="faq" className="snap-page--white">
+        <PagePlaceholder title="FAQ" />
+      </SnapSection>
+      <SnapSection id="board" className="snap-page--brown">
+        <PagePlaceholder title="Board" />
+      </SnapSection>
+      <SnapSection id="gallery" className="snap-page--white">
+        <PagePlaceholder title="Photo Gallery" />
+      </SnapSection>
+      <SnapSection id="socials">
         <SocialsSection content={homePageContent.socials} />
-      </main>
-    </>
+      </SnapSection>
+    </main>
   );
 }

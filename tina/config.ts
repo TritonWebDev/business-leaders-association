@@ -157,6 +157,20 @@ export default defineConfig({
                   { type: "string", name: "href", label: "Href", required: true },
                 ],
               },
+              {
+                type: "object",
+                name: "newsletter",
+                label: "Newsletter",
+                fields: [
+                  { type: "string", name: "title", label: "Title", required: true },
+                  {
+                    type: "string",
+                    name: "description",
+                    label: "Description",
+                    required: true,
+                  },
+                ],
+              },
             ],
           },
         ],

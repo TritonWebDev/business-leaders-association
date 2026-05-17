@@ -58,6 +58,10 @@ export type SocialsContent = {
     label: string;
     href: string;
   }[];
+  newsletter: {
+    title: string;
+    description: string;
+  };
 };
 
 export type HomePageContent = {
