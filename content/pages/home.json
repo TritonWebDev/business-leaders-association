@@ -44,12 +44,17 @@
   },
   "board": {
     "eyebrow": "Board Members",
-    "title": "Meet our board",
+    "title": "MEET THE TEAM",
     "members": [
-      {
-        "name": "Member Name",
-        "role": "Role"
-      }
+      { "name": "Sanya Bhasin", "role": "President", "image": "" },
+      { "name": "Kavya Narayanan", "role": "Vice President", "image": "" },
+      { "name": "Michelle Ng", "role": "Lead Secretary", "image": "" },
+      { "name": "Juhui Song", "role": "Treasurer", "image": "" },
+      { "name": "Nathan Lee", "role": "Social Chair", "image": "" },
+      { "name": "Jacob Katz", "role": "Social Chair", "image": "" },
+      { "name": "Sid Narula", "role": "Logistics Lead", "image": "" },
+      { "name": "Vanessa Pham", "role": "Marketing Director", "image": "" },
+      { "name": "Josie Yiu", "role": "Partnerships Director", "image": "" }
     ]
   },
   "gallery": {
