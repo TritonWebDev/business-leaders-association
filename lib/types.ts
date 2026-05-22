@@ -7,6 +7,8 @@ export type HeroContent = {
   eyebrow: string;
   title: string;
   description: string;
+  src: string;
+  alt: string;
 };
 
 export type AboutContent = {
