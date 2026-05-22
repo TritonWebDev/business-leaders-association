@@ -21,16 +21,12 @@
     "body": "Placeholder copy for the about section."
   },
   "membership": {
-    "eyebrow": "Become A Member",
-    "title": "Receive a Member pass",
+    "eyebrow": "Join Us",
+    "title": "Become a Member",
     "options": [
       {
         "title": "General Membership",
-        "description": "Placeholder copy for general membership."
-      },
-      {
-        "title": "Premier Membership",
-        "description": "Placeholder copy for premier membership."
+        "description": "Free to join — no fees required."
       }
     ]
   },
