@@ -39,6 +39,7 @@ export type BoardContent = {
   members: {
     name: string;
     role: string;
+    image?: string;
   }[];
 };
 

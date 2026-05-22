@@ -1,0 +1,72 @@
+:root {
+     --color-bla-dark-brown: #221c19;
+    --color-bla-light-brown: #342b27;
+    --color-bla-tan: #7a6f64;
+    --color-bla-cream: #bfb8af;
+}
+.board-section {
+    background-color: var(--color-bla-light-brown);
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+}
+.board-section h1 {
+    font-family: "Primary Font", serif;
+    color: var(--color-bla-cream);
+    font-size: 60px
+}
+.board-section h2{
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: "Secondary Font", serif;
+    color: var(--color-bla-cream)
+}
+
+.board-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-bla-cream);
+  font-family: "Secondary Font", serif;
+  padding-bottom: 0px 10px;
+}
+
+.board-profile img {
+    outline: 1px solid var(--color-bla-cream);
+    outline-offset: -8px;
+    border-radius: 50%;
+    width: 175;
+    
+}
+.board-section hr {
+    color: var(--color-bla-cream);
+    width: 80%;
+    margin: 2rem auto;
+}
+
+
+.board-section h1 {
+    font-family: "Primary Font", serif;
+    color: var(--color-bla-cream);
+}
+
+.members-first-row,
+.members-second-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+}
+.members-first-row {
+  margin: 1rem auto;
+}
+.board-profile h3 {
+    padding-top: 1rem;
+    color: #F9F1E8;
+    font-size: 1.4rem;
+}
+.board-profile h4{
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+}
