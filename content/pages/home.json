@@ -69,21 +69,25 @@
     ]
   },
   "socials": {
-    "eyebrow": "Socials + Newsletter",
+    "eyebrow": "STAY IN TOUCH",
     "title": "Find us elsewhere",
     "links": [
       {
         "label": "Instagram",
-        "href": "#"
+        "href": "https://instagram.com"
       },
       {
-        "label": "TikTok",
-        "href": "#"
+        "label": "Slack",
+        "href": "https://slack.com"
       },
       {
         "label": "LinkedIn",
-        "href": "#"
+        "href": "https://linkedin.com"
       }
-    ]
+    ],
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Updates on events and internships"
+    }
   }
 }

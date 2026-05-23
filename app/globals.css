@@ -15,4 +15,15 @@
 @theme {
   --font-primary: "Primary Font", serif;
   --font-secondary: "Secondary Font", serif;
+
+  --color-bla-dark-brown: #221c19;
+  --color-bla-light-brown: #342b27;
+  --color-bla-tan: #7a6f64;
+  --color-bla-cream: #bfb8af;
+}
+
+body {
+  background-color: var(--color-bla-light-brown);
+  color: var(--color-bla-cream);
+  font-family: var(--font-secondary), "Libre Baskerville", Georgia, serif;
 }
