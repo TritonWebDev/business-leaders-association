@@ -18,7 +18,9 @@
   "about": {
     "eyebrow": "About",
     "title": "Our Mission",
-    "body": "Placeholder copy for the about section."
+    "body": "Welcome to [Club Name], UCSD's home for ambitious students passionate about business, innovation, and growth. From case competitions and startup pitches to networking events with industry leaders, we offer hands-on opportunities to sharpen your skills and build lasting connections. Join a community where curiosity meets ambition, and take the next step in your professional journey with us.",
+    "src": "uploads/about-placeholder.png",
+    "alt": "About placeholder"
   },
   "membership": {
     "eyebrow": "Join Us",
