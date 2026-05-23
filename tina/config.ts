@@ -46,6 +46,12 @@ export default defineConfig({
           },
           {
             type: "object",
+            name: "site",
+            label: "Site",
+            fields: [{ type: "string", name: "brand", label: "Brand Name", required: true }],
+          },
+          {
+            type: "object",
             name: "hero",
             label: "Hero",
             fields: [

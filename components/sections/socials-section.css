@@ -6,9 +6,9 @@
   --bla-cream: #bfb8af;
   --socials-bg: var(--bla-light-brown);
   --socials-accent: var(--bla-cream);
-  --socials-pad-x: clamp(1.25rem, 5vw, 3.5rem);
+  --socials-pad-x: clamp(1.25rem, 5%, 3.5rem);
   --socials-pad-y: clamp(3rem, 12vh, 7.5rem);
-  --socials-container: min(88vw, 52rem);
+  --socials-container: min(92%, 52rem);
   --socials-eyebrow: clamp(0.625rem, 1.15vw, 0.8125rem);
   --socials-title: clamp(2.25rem, 6.2vw, 3.75rem);
   --socials-newsletter-title: clamp(1.875rem, 5vw, 3.25rem);
@@ -58,11 +58,11 @@
 .socials-section__socials {
   display: flex;
   width: 100%;
-  max-width: min(92vw, 44rem);
+  max-width: min(100%, 44rem);
   margin-top: var(--socials-gap-large);
   align-items: flex-start;
   justify-content: space-between;
-  gap: clamp(2rem, 10vw, 6rem);
+  gap: clamp(2rem, 10%, 6rem);
   padding: clamp(0.5rem, 2vh, 1rem) 0;
   list-style: none;
 }
@@ -102,7 +102,7 @@
 .socials-section__divider {
   flex-shrink: 0;
   width: var(--socials-divider);
-  min-width: clamp(8rem, 32vw, 14rem);
+  min-width: clamp(8rem, 30%, 14rem);
   height: 1px;
   margin-top: var(--socials-gap-large);
   margin-bottom: var(--socials-gap-large);
@@ -237,11 +237,11 @@
 .socials-toast {
   position: fixed;
   inset-inline: 0;
-  top: 0;
-  z-index: 50;
+  top: var(--site-nav-offset);
+  z-index: 110;
   display: flex;
   justify-content: center;
-  padding-top: clamp(1rem, 3vh, 1.75rem);
+  padding-top: 0.5rem;
   pointer-events: none;
   animation: socials-toast-in 0.45s ease-out;
 }
@@ -272,7 +272,7 @@
 
 @media (max-width: 36rem) {
   .socials-newsletter__form {
-    width: min(92vw, 40rem);
+    width: min(100%, 40rem);
   }
 
   .socials-newsletter__form button.socials-newsletter__button {

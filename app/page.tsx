@@ -13,15 +13,25 @@ export default function Home() {
 
   return (
     <>
-      <SiteNav items={navigation} />
+      <SiteNav brand={homePageContent.site.brand} items={navigation} />
       <main>
-        <HeroSection content={homePageContent.hero} />
-        <AboutSection content={homePageContent.about} />
+        <section id="home">
+          <HeroSection content={homePageContent.hero} />
+        </section>
+        <section id="about">
+          <AboutSection content={homePageContent.about} />
+        </section>
         <MembershipSection content={homePageContent.membership} />
         <FaqSection content={homePageContent.faq} />
-        <BoardSection content={homePageContent.board} />
-        <GallerySection content={homePageContent.gallery} />
-        <SocialsSection content={homePageContent.socials} />
+        <section id="board">
+          <BoardSection content={homePageContent.board} />
+        </section>
+        <section id="gallery">
+          <GallerySection content={homePageContent.gallery} />
+        </section>
+        <section id="socials">
+          <SocialsSection content={homePageContent.socials} />
+        </section>
       </main>
     </>
   );
