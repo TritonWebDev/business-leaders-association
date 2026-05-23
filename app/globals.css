@@ -18,7 +18,8 @@
 
   --color-bla-dark-brown: #221c19;
   --color-bla-light-brown: #342b27;
-  --color-bla-tan: #7a6f64;
+  --color-bla-tan: #5e4814;
+  --color-bla-accent: #5e4814;
   --color-bla-cream: #bfb8af;
 }
 
@@ -26,4 +27,20 @@ body {
   background-color: var(--color-bla-light-brown);
   color: var(--color-bla-cream);
   font-family: var(--font-secondary), "Libre Baskerville", Georgia, serif;
+}
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4.5rem, 12vw, 7.5rem);
+  background-color: var(--color-bla-light-brown);
+}
+
+.site-main > section,
+.site-main > section > section,
+.site-main > section > div,
+.site-main > section > .gallery,
+.site-main > section > .board-section,
+.site-main > section > .socials-section {
+  scroll-margin-top: clamp(4.75rem, 12vh, 6.25rem);
 }

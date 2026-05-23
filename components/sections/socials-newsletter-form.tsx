@@ -82,7 +82,7 @@ export function SocialsNewsletterForm({ title, description }: SocialsNewsletterF
           <button
             type="button"
             onClick={() => void handleSubscribe()}
-            className="socials-newsletter__button box-border shrink-0 rounded-md border border-solid border-bla-cream bg-[#493F39] px-5"
+            className="socials-newsletter__button box-border shrink-0 rounded-md border border-solid border-bla-cream bg-bla-accent px-5"
           >
             Subscribe
           </button>

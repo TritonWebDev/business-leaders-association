@@ -1,11 +1,6 @@
 .socials-section {
-  --bla-dark-brown: #221c19;
-  --bla-light-brown: #342b27;
-  --bla-tan: #7a6f64;
-  --bla-subscribe: #493f39;
-  --bla-cream: #bfb8af;
-  --socials-bg: var(--bla-light-brown);
-  --socials-accent: var(--bla-cream);
+  --socials-bg: var(--color-bla-light-brown);
+  --socials-accent: var(--color-bla-cream);
   --socials-pad-x: clamp(1.25rem, 5%, 3.5rem);
   --socials-pad-y: clamp(3rem, 12vh, 7.5rem);
   --socials-container: min(92%, 52rem);
@@ -108,7 +103,7 @@
   margin-bottom: var(--socials-gap-large);
   margin-inline: auto;
   border: none;
-  background-color: var(--bla-cream);
+  background-color: var(--color-bla-cream);
   opacity: 0.65;
 }
 
@@ -156,23 +151,23 @@
   line-height: 1.5;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--bla-cream);
+  border-color: var(--color-bla-cream);
   border-radius: var(--socials-radius);
-  background-color: var(--bla-dark-brown);
+  background-color: var(--color-bla-dark-brown);
   outline: none;
   font-family: "Secondary Font", var(--font-libre-fallback), "Libre Baskerville", Georgia, serif;
   font-size: var(--socials-body);
-  color: var(--bla-tan);
+  color: var(--color-bla-tan);
   -webkit-appearance: none;
   appearance: none;
 }
 
 .socials-newsletter__form textarea.socials-newsletter__input--typed {
-  color: var(--bla-cream);
+  color: var(--color-bla-cream);
 }
 
 .socials-newsletter__form textarea.socials-newsletter__input:focus {
-  border-color: var(--bla-cream);
+  border-color: var(--color-bla-cream);
 }
 
 .socials-newsletter__form textarea.socials-newsletter__input--shake {
@@ -209,9 +204,9 @@
   padding-inline: 20px;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--bla-cream);
+  border-color: var(--color-bla-cream);
   border-radius: var(--socials-radius);
-  background-color: var(--bla-subscribe);
+  background-color: var(--color-bla-accent);
   color: var(--socials-accent);
   font-family: "Secondary Font", var(--font-libre-fallback), "Libre Baskerville", Georgia, serif;
   font-size: var(--socials-body);
@@ -225,8 +220,8 @@
 }
 
 .socials-newsletter__form button.socials-newsletter__button:hover:not(:disabled) {
-  border-color: var(--bla-cream);
-  background-color: color-mix(in srgb, var(--bla-subscribe) 85%, var(--bla-cream));
+  border-color: var(--color-bla-cream);
+  background-color: color-mix(in srgb, var(--color-bla-accent) 85%, var(--color-bla-cream));
 }
 
 .socials-newsletter__button:disabled {

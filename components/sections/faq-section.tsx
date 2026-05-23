@@ -19,7 +19,7 @@ export function FaqSection({ content }: FaqSectionProps) {
   return (
     <section
       id="faq"
-      className="bg-[#3a2e26] text-[#c4b5a0] py-20 px-8 scroll-mt-24"
+      className="bg-bla-light-brown text-bla-cream py-20 px-8 scroll-mt-24"
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
@@ -32,9 +32,9 @@ export function FaqSection({ content }: FaqSectionProps) {
           </p>
         </div>
 
-        <div className="border-t border-[#c4b5a0]/25">
+        <div className="border-t border-bla-cream/25">
           {content.items.map((faq, index) => (
-            <div key={faq.question} className="border-b border-[#c4b5a0]/25">
+            <div key={faq.question} className="border-b border-bla-cream/25">
               <button
                 className="w-full py-6 flex justify-between items-center text-left focus:outline-none transition-opacity hover:opacity-80"
                 onClick={() => toggleFAQ(index)}

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <SiteNav brand={homePageContent.site.brand} items={navigation} />
-      <main>
+      <main className="site-main">
         <section id="home">
           <HeroSection content={homePageContent.hero} />
         </section>

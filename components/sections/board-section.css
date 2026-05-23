@@ -1,9 +1,3 @@
-:root {
-     --color-bla-dark-brown: #221c19;
-    --color-bla-light-brown: #342b27;
-    --color-bla-tan: #7a6f64;
-    --color-bla-cream: #bfb8af;
-}
 .board-section {
     background-color: var(--color-bla-light-brown);
     width: 100%;
@@ -63,7 +57,7 @@
 }
 .board-profile h3 {
     padding-top: 1rem;
-    color: #F9F1E8;
+    color: var(--color-bla-cream);
     font-size: 1.4rem;
 }
 .board-profile h4{

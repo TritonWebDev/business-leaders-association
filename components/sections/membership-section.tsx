@@ -23,7 +23,7 @@ export function MembershipSection({ content }: MembershipSectionProps) {
   return (
     <section
       id="membership"
-      className="bg-[#3a2e26] text-[#c4b5a0] py-20 px-8 scroll-mt-24"
+      className="bg-bla-light-brown text-bla-cream py-20 px-8 scroll-mt-24"
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-4">
@@ -35,11 +35,11 @@ export function MembershipSection({ content }: MembershipSectionProps) {
           </h2>
         </div>
 
-        <div className="border-t border-[#c4b5a0]/20 mt-8 pt-16">
+        <div className="border-t border-bla-cream/20 mt-8 pt-16">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12">
             <div className="flex-1">
-              <div className="inline-flex items-center bg-[#4a3d33] rounded-full px-4 py-1.5 text-sm mb-8 font-secondary">
-                <span className="w-2 h-2 bg-[#c4b5a0]/60 rounded-full mr-2"></span>
+              <div className="inline-flex items-center bg-bla-dark-brown rounded-full px-4 py-1.5 text-sm mb-8 font-secondary">
+                <span className="w-2 h-2 bg-bla-cream/60 rounded-full mr-2"></span>
                 Applications reopen in Fall
               </div>
               <h3 className="font-primary text-4xl mb-3">
@@ -48,7 +48,7 @@ export function MembershipSection({ content }: MembershipSectionProps) {
               <p className="mb-10 font-secondary text-lg">
                 {primaryOption.description}
               </p>
-              <button className="inline-flex items-center gap-3 bg-[#4a3d33] rounded-md px-5 py-2.5 hover:bg-[#5a4d43] transition-colors font-secondary">
+              <button className="inline-flex items-center gap-3 bg-bla-dark-brown rounded-md px-5 py-2.5 hover:bg-bla-accent transition-colors font-secondary">
                 Application
                 <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
               </button>
@@ -78,7 +78,7 @@ export function MembershipSection({ content }: MembershipSectionProps) {
           </div>
         </div>
 
-        <div className="mt-20 border-t border-[#c4b5a0]/20 pt-8 text-center">
+        <div className="mt-20 border-t border-bla-cream/20 pt-8 text-center">
           <p className="font-secondary italic text-base opacity-80">
             ✦ Active members who attend 5 or more events per quarter earn
             Premium membership ✦
