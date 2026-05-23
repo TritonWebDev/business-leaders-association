@@ -36,10 +36,11 @@
     "eyebrow": "FAQ",
     "title": "Frequently Asked Questions",
     "items": [
-      {
-        "question": "Placeholder question?",
-        "answer": "Placeholder answer."
-      }
+      { "question": "Question 1", "answer": "answer answer answer answer answer answer" },
+      { "question": "Question 2", "answer": "Detailed answer for question 2 goes here." },
+      { "question": "Question 3", "answer": "Detailed answer for question 3 goes here." },
+      { "question": "Question 4", "answer": "Detailed answer for question 4 goes here." },
+      { "question": "Question 5", "answer": "Detailed answer for question 5 goes here." }
     ]
   },
   "board": {
