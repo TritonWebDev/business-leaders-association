@@ -5,11 +5,15 @@ type BoardProfileProps = {
 };
 
 export function BoardProfile({ name, role, image }: BoardProfileProps) {
-    return (
-        <div className="board-profile">
-            <img src={image ? image : "images/circle-user-solid-full.svg"} width="100px" alt={image ? "Board Member photo" : "default photo"}/>
-            <h3>{name}</h3>
-            <h4>{role}</h4>
-        </div>
-    )
+  return (
+    <div className="board-profile">
+      <img
+        className="board-profile__avatar"
+        src={image ? image : "/images/circle-user-solid-full.svg"}
+        alt={image ? `${name} photo` : "Default board member photo"}
+      />
+      <h3 className="board-profile__name">{name}</h3>
+      <h4 className="board-profile__role">{role}</h4>
+    </div>
+  );
 }

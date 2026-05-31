@@ -23,21 +23,21 @@ export function MembershipSection({ content }: MembershipSectionProps) {
   return (
     <section
       id="membership"
-      className="bg-bla-light-brown text-bla-cream py-20 px-8 scroll-mt-24"
+      className="bg-bla-light-brown text-bla-cream pb-20 px-8 min-w-0 max-w-full overflow-x-clip box-border"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto min-w-0 w-full">
         <div className="text-center mb-4">
           <p className="text-sm tracking-[0.25em] uppercase mb-4 font-secondary">
             {content.eyebrow}
           </p>
-          <h2 className="font-primary text-6xl md:text-7xl leading-tight">
+          <h2 className="font-primary text-4xl sm:text-5xl md:text-6xl leading-tight">
             {content.title}
           </h2>
         </div>
 
         <div className="border-t border-bla-cream/20 mt-8 pt-16">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-12">
-            <div className="flex-1">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12 min-w-0">
+            <div className="flex-1 min-w-0">
               <div className="inline-flex items-center bg-bla-dark-brown rounded-full px-4 py-1.5 text-sm mb-8 font-secondary">
                 <span className="w-2 h-2 bg-bla-cream/60 rounded-full mr-2"></span>
                 Applications reopen in Fall
@@ -54,8 +54,8 @@ export function MembershipSection({ content }: MembershipSectionProps) {
               </button>
             </div>
 
-            <div className="flex-1 w-full">
-              <h3 className="font-primary text-3xl mb-8">
+            <div className="flex-1 w-full min-w-0">
+              <h3 className="font-primary text-2xl sm:text-3xl mb-8">
                 What you get access to
               </h3>
               <ul className="space-y-6">

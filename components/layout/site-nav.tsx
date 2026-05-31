@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, type MouseEvent } from "react";
 import type { NavItem } from "@/lib/types";
 import "./site-nav.css";
 
@@ -14,15 +14,41 @@ export function SiteNav({ brand = "Business Leaders Association", items }: SiteN
 
   const closeMenu = () => setIsMenuOpen(false);
 
+  const handleSectionLink = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+      if (!href.startsWith("#")) return;
+
+      const id = href.replace(/^#/, "");
+      const target = id ? document.getElementById(id) : null;
+      if (!target) return;
+
+      event.preventDefault();
+
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+      window.history.pushState(null, "", `#${id}`);
+      closeMenu();
+    },
+    [],
+  );
+
   return (
     <header className="site-nav">
-      <a className="site-nav__brand site-nav__brand--desktop" href="#home" onClick={closeMenu}>
+      <a
+        className="site-nav__brand site-nav__brand--desktop"
+        href="#home"
+        onClick={(event) => handleSectionLink(event, "#home")}
+      >
         {brand}
       </a>
 
       <div className="site-nav__mobile">
         <div className="site-nav__mobile-bar">
-          <a className="site-nav__brand site-nav__brand--mobile" href="#home" onClick={closeMenu}>
+          <a
+            className="site-nav__brand site-nav__brand--mobile"
+            href="#home"
+            onClick={(event) => handleSectionLink(event, "#home")}
+          >
             {brand}
           </a>
           <button
@@ -58,7 +84,7 @@ export function SiteNav({ brand = "Business Leaders Association", items }: SiteN
                   className="site-nav__link"
                   href={item.href}
                   tabIndex={isMenuOpen ? 0 : -1}
-                  onClick={closeMenu}
+                  onClick={(event) => handleSectionLink(event, item.href)}
                 >
                   {item.label}
                 </a>
@@ -71,7 +97,11 @@ export function SiteNav({ brand = "Business Leaders Association", items }: SiteN
       <ul className="site-nav__links site-nav__links--desktop">
         {items.map((item) => (
           <li key={item.href}>
-            <a className="site-nav__link" href={item.href}>
+            <a
+              className="site-nav__link"
+              href={item.href}
+              onClick={(event) => handleSectionLink(event, item.href)}
+            >
               {item.label}
             </a>
           </li>
