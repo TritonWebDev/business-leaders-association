@@ -49,7 +49,7 @@ export function FaqSection({ content }: FaqSectionProps) {
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out font-secondary ${
                   openIndex === index
-                    ? "max-h-40 pb-6 opacity-80 text-base"
+                    ? "max-h-96 pb-6 opacity-80 text-base"
                     : "max-h-0 opacity-0"
                 }`}
               >
