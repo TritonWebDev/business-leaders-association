@@ -52,7 +52,9 @@ var config_default = defineConfig({
             fields: [
               { type: "string", name: "eyebrow", label: "Eyebrow" },
               { type: "string", name: "title", label: "Title", required: true },
-              { type: "string", name: "description", label: "Description", ui: { component: "textarea" } }
+              { type: "string", name: "description", label: "Description", ui: { component: "textarea" } },
+              { type: "image", name: "src", label: "Background Image" },
+              { type: "string", name: "alt", label: "Image Alt Text" }
             ]
           },
           {
@@ -62,7 +64,9 @@ var config_default = defineConfig({
             fields: [
               { type: "string", name: "eyebrow", label: "Eyebrow" },
               { type: "string", name: "title", label: "Title", required: true },
-              { type: "string", name: "body", label: "Body", ui: { component: "textarea" } }
+              { type: "string", name: "body", label: "Body", ui: { component: "textarea" } },
+              { type: "image", name: "src", label: "Background Image" },
+              { type: "string", name: "alt", label: "Image Alt Text" }
             ]
           },
           {
@@ -117,7 +121,8 @@ var config_default = defineConfig({
                 list: true,
                 fields: [
                   { type: "string", name: "name", label: "Name", required: true },
-                  { type: "string", name: "role", label: "Role" }
+                  { type: "string", name: "role", label: "Role" },
+                  { type: "image", name: "image", label: "Photo" }
                 ]
               }
             ]

@@ -13,14 +13,14 @@
   "hero": {
     "eyebrow": "HiFi Homepage",
     "title": "Business Leaders \n Association",
-    "description": "A pre-professional UCSD club for students passionate about leadership, diversity entrepreneurship!",
+    "description": "Business Leaders Association is a pre-professional organization at the University of California San Diego committed to creating an open and accessible community where students can grow professionally through meaningful connections, collaborative learning, and shared ambition.",
     "src": "uploads/hero-placeholder.png",
     "alt": "Hero placeholder image"
   },
   "about": {
     "eyebrow": "About",
     "title": "Our Mission",
-    "body": "Welcome to [Club Name], UCSD's home for ambitious students passionate about business, innovation, and growth. From case competitions and startup pitches to networking events with industry leaders, we offer hands-on opportunities to sharpen your skills and build lasting connections. Join a community where curiosity meets ambition, and take the next step in your professional journey with us.",
+    "body": "Business Leaders Association is committed to creating an open and accessible community where students can grow professionally through meaningful connections, collaborative learning, and shared ambition. By connecting students with peers, alumni, and industry professionals, we empower individuals to explore their interests, broaden their horizons, and take initiative in their own professional journeys. We believe professional growth starts with exposure, curiosity, and the willingness to put yourself out there, regardless of prior experience or background.",
     "src": "uploads/about-placeholder.png",
     "alt": "About placeholder"
   },
@@ -38,11 +38,10 @@
     "eyebrow": "FAQ",
     "title": "Frequently Asked Questions",
     "items": [
-      { "question": "Question 1", "answer": "answer answer answer answer answer answer" },
-      { "question": "Question 2", "answer": "Detailed answer for question 2 goes here." },
-      { "question": "Question 3", "answer": "Detailed answer for question 3 goes here." },
-      { "question": "Question 4", "answer": "Detailed answer for question 4 goes here." },
-      { "question": "Question 5", "answer": "Detailed answer for question 5 goes here." }
+      { "question": "When is recruitment?", "answer": "Twice a year! In the beginning of Fall quarter and the beginning of Winter quarter." },
+      { "question": "How to apply?", "answer": "Check out our linktree to find applications and requirements to apply!" },
+      { "question": "Is BLA just a business club?", "answer": "Not at all! BLA is open to all majors and all backgrounds." },
+      { "question": "Do I need previous experience to join?", "answer": "Nope! BLA is beginner friendly, and especially good to explore options if you're still figuring out what you want to do." }
     ]
   },
   "board": {
@@ -64,10 +63,12 @@
     "eyebrow": "Photo Gallery",
     "title": "LIFE AT BLA",
     "images": [
-      {
-        "src": "/uploads/gallery-placeholder.jpg",
-        "alt": "Gallery placeholder"
-      }
+      { "src": "/images/business1.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business2.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business3.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business4.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business5.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business6.jpg", "alt": "Business Leaders Association event placeholder" }
     ]
   },
   "socials": {
