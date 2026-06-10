@@ -14,7 +14,7 @@ export function GallerySection({ content }: GallerySectionProps) {
     <h2>{content.title}</h2>
     <h1>{content.eyebrow}</h1>
     <hr id="hr-top" />
-    <EmblaCarousel />
+    <EmblaCarousel slides={content.images} />
     <hr id="hr-bottom" />
   </div>)
   ;

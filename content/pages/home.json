@@ -63,10 +63,12 @@
     "eyebrow": "Photo Gallery",
     "title": "LIFE AT BLA",
     "images": [
-      {
-        "src": "/uploads/gallery-placeholder.jpg",
-        "alt": "Gallery placeholder"
-      }
+      { "src": "/images/business1.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business2.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business3.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business4.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business5.jpg", "alt": "Business Leaders Association event placeholder" },
+      { "src": "/images/business6.jpg", "alt": "Business Leaders Association event placeholder" }
     ]
   },
   "socials": {
