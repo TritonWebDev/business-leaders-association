@@ -19,11 +19,11 @@ export function FaqSection({ content }: FaqSectionProps) {
   return (
     <section
       id="faq"
-      className="bg-bla-light-brown text-bla-cream py-20 px-8 scroll-mt-24"
+      className="bg-bla-light-brown text-bla-cream pb-20 px-8 min-w-0 max-w-full overflow-x-clip box-border"
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto min-w-0 w-full">
         <div className="text-center mb-16">
-          <h2 className="font-primary text-6xl md:text-7xl leading-tight mb-6">
+          <h2 className="font-primary text-4xl sm:text-5xl md:text-6xl leading-tight mb-6">
             {content.title}
           </h2>
           <p className="font-secondary text-lg opacity-90">
@@ -36,10 +36,10 @@ export function FaqSection({ content }: FaqSectionProps) {
           {content.items.map((faq, index) => (
             <div key={faq.question} className="border-b border-bla-cream/25">
               <button
-                className="w-full py-6 flex justify-between items-center text-left focus:outline-none transition-opacity hover:opacity-80"
+                className="w-full min-w-0 py-6 flex justify-between items-center gap-4 text-left focus:outline-none transition-opacity hover:opacity-80"
                 onClick={() => toggleFAQ(index)}
               >
-                <span className="font-primary text-2xl">{faq.question}</span>
+                <span className="font-primary text-xl sm:text-2xl min-w-0">{faq.question}</span>
                 <FontAwesomeIcon
                   icon={openIndex === index ? faChevronUp : faChevronDown}
                   className="w-5 h-5 opacity-70"
