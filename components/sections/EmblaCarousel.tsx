@@ -1,11 +1,20 @@
 "use client"
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import './gallery-section.css'
 import Autoplay from 'embla-carousel-autoplay'
 
-const SLIDES = [
+type GallerySlide = {
+  src: string
+  alt: string
+}
+
+type EmblaCarouselProps = {
+  slides?: GallerySlide[]
+}
+
+const DEFAULT_SLIDES: GallerySlide[] = [
   { src: '/images/business1.jpg', alt: 'business meeting' },
   { src: '/images/business2.jpg', alt: 'business meeting' },
   { src: '/images/business3.jpg', alt: 'business meeting' },
@@ -16,9 +25,12 @@ const SLIDES = [
 
 const AUTOPLAY_DELAY_MS = 2500
 
-export function EmblaCarousel() {
-  const autoplayPlugin = useRef(Autoplay({ stopOnInteraction: false, delay: AUTOPLAY_DELAY_MS }))
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 20 }, [autoplayPlugin.current])
+export function EmblaCarousel({ slides = DEFAULT_SLIDES }: EmblaCarouselProps) {
+  const autoplayPlugin = useMemo(
+    () => Autoplay({ stopOnInteraction: false, delay: AUTOPLAY_DELAY_MS }),
+    [],
+  )
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 20 }, [autoplayPlugin])
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   const resetAutoplay = useCallback(() => {
@@ -82,7 +94,7 @@ export function EmblaCarousel() {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {SLIDES.map((slide, i) => (
+          {slides.map((slide, i) => (
             <div className="embla__slide" key={i}>
               <img src={slide.src} alt={slide.alt} />
             </div>
@@ -94,7 +106,7 @@ export function EmblaCarousel() {
           &#9664;
         </button>
         <div className="embla__dots">
-          {SLIDES.map((_, i) => (
+          {slides.map((_, i) => (
             <button
               key={i}
               type="button"
