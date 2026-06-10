@@ -1,0 +1,44 @@
+{
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/#about" },
+    { "label": "Become a Member", "href": "/#membership" },
+    { "label": "FAQ", "href": "/#faq" },
+    { "label": "Board", "href": "/#board" },
+    { "label": "Photo Gallery", "href": "/#gallery" },
+    { "label": "Contact", "href": "/#socials" }
+  ],
+  "site": {
+    "brand": "Business Leaders Association"
+  },
+  "alumni": {
+    "eyebrow": "Connect with BLA graduates",
+    "title": "Alumni",
+    "stats": [
+      { "number": "100+", "label": "Alumni" },
+      { "number": "30+", "label": "Companies" }
+    ],
+    "members": [
+        { "name": "Jordan Mitchell", "role": "SWE @ Google", "image": "", "gradYear": "2024", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Priya Nair", "role": "Product Manager @ Meta", "image": "", "gradYear": "2024", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Marcus Thompson", "role": "Data Scientist @ Netflix", "image": "", "gradYear": "2024", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Aisha Okonkwo", "role": "Business Analyst @ Deloitte", "image": "", "gradYear": "2023", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Ethan Park", "role": "SWE @ Amazon", "image": "", "gradYear": "2023", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Sofia Reyes", "role": "UX Designer @ Apple", "image": "", "gradYear": "2023", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Devon Harris", "role": "Consultant @ McKinsey", "image": "", "gradYear": "2023", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Layla Hassan", "role": "ML Engineer @ OpenAI", "image": "", "gradYear": "2022", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Tyler Brooks", "role": "Finance Analyst @ JP Morgan", "image": "", "gradYear": "2022", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Nadia Petrov", "role": "SWE @ Microsoft", "image": "", "gradYear": "2022", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Caleb Wright", "role": "PM @ Stripe", "image": "", "gradYear": "2022", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Imani Johnson", "role": "Data Analyst @ Spotify", "image": "", "gradYear": "2021", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Ryan Nguyen", "role": "Backend Engineer @ Uber", "image": "", "gradYear": "2021", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Zoe Campbell", "role": "Researcher @ MIT Lincoln Lab", "image": "", "gradYear": "2021", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Andre Williams", "role": "SWE @ Salesforce", "image": "", "gradYear": "2021", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Maya Patel", "role": "Consultant @ BCG", "image": "", "gradYear": "2020", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Elijah Carter", "role": "DevOps Engineer @ IBM", "image": "", "gradYear": "2020", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Fatima Al-Amin", "role": "Product Analyst @ Airbnb", "image": "", "gradYear": "2020", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Noah Sanchez", "role": "iOS Engineer @ Twitter", "image": "", "gradYear": "2020", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" },
+        { "name": "Ava Robinson", "role": "SWE @ LinkedIn", "image": "", "gradYear": "2019", "linkedIn": "https://www.linkedin.com/in/stephencurry30/" }
+        ]
+  }
+}

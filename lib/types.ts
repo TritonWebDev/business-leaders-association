@@ -47,6 +47,22 @@ export type BoardContent = {
   }[];
 };
 
+export type AlumniContent = {
+  eyebrow: string;
+  title: string;
+  stats?: {
+    number: string;
+    label: string;
+  }[];
+  members: {
+    name: string;
+    role: string;
+    image?: string;
+    gradYear: string;
+    linkedIn?: string;
+  }[];
+};
+
 export type GalleryContent = {
   eyebrow: string;
   title: string;
@@ -83,4 +99,10 @@ export type HomePageContent = {
   board: BoardContent;
   gallery: GalleryContent;
   socials: SocialsContent;
+};
+
+export type AlumniPageContent = {
+  navigation: NavItem[];
+  site: SiteContent;
+  alumni: AlumniContent;
 };
